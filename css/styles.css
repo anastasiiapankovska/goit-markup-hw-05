@@ -108,7 +108,7 @@ body {
 /*menu*/
 .menu 
 {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     color: #2E2F42;
@@ -193,6 +193,7 @@ body {
 /*========================================Main==============*/
 
 .hero{
+    width: 1440px;
     background-color: #434455;
     text-align: center;
     padding: 192px 0;
@@ -496,11 +497,12 @@ margin-bottom: 72px;
 
 
 .social-media{
+font-family: var(--basic-font-family);
 font-size: 16px;
-line-height: 24px;
-line-height: 128%;
+font-weight: 500;
+line-height: 1.5;
 color: #FFFFFF;
-display: block;
+display: flex;
 margin-bottom: 16px;
 }
 
@@ -527,7 +529,7 @@ margin-bottom: 16px;
 
 /*==================================PAGE2=====================*/
 .butons{
-    font-weight: 600;
+    font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.04em;
@@ -545,6 +547,7 @@ margin-bottom: 16px;
 }
 .butons:hover,
 .butons:focus {
+    border: #404BBF;
     color: #F4F4FD ;
     background: var(--second-brand-color);
     box-shadow: 0px 2px 2px 0px #0000001F, 0px 2px 1px 0px 
@@ -640,6 +643,15 @@ padding-top: 96px;
 transform: translateY(0%);
 }
 
+.text-card-two{
+    position: absolute;
+    top: 0;
+    font-size:16px;
+    font-family:var(--basic-font-family);
+    color: #F4F4FD;
+    line-height: 1.5;
+    padding: 40px 32px 32px;
+}
 /*========================================modal==============*/
 
 .backdrop {
@@ -653,10 +665,10 @@ transition-timing-function:var(--transition-timing-function);
 
 }
 
-.is-hidden{
+.backdrop.is-hidden{
     opacity: 0;
-    visibility: hidden;
     pointer-events: none;
+    visibility: hidden;
 }
 
 .modal{
@@ -686,7 +698,6 @@ transition-timing-function:var(--transition-timing-function);
     display: flex;
     justify-content: center;
     align-items: center;
-    transition-property:var(--second-brand-color);
     transition-duration:var(--transition-duration);
     transition-timing-function:var(--transition-timing-function);
 }
