@@ -199,6 +199,7 @@ body {
     background-image: linear-gradient(to right, RGBA(46,47,66,0.7),RGBA(46,47,66,0.7)),    url(../img/about/people-office.jpg);
     background-repeat: no-repeat;
     background-position: center;
+    margin: auto;
 }
 
 
